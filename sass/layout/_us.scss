@@ -1,0 +1,33 @@
+.subtitle-us {
+  display: flex;
+}
+
+.us-item {
+  width: calc((100%-60px) / 3);
+  position: relative;
+  .subtitle-us &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.img-us {
+  display: block;
+}
+.subtitle-list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}
+.subtitle-heading {
+  position: absolute;
+
+  width: 100%;
+  max-width: 370px;
+
+  color: $primery-background-color;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  padding: 27px 0 27px 0;
+  bottom: 0;
+}

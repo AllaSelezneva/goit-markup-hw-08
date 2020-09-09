@@ -1,0 +1,19 @@
+.us,
+.advantages,
+.team-work,
+.clients,
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.advantages {
+  flex-wrap: nowrap;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}

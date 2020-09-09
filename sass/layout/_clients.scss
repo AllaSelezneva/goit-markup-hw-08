@@ -1,0 +1,30 @@
+.clients-title {
+  display: flex;
+  align-content: center;
+}
+.clients-item {
+  width: 170px;
+  height: 90px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  transition: border 250ms $timing-function;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+  .clients-title &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.clients-link {
+  display: block;
+  fill: #afb1b8;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: fill 250ms $timing-function;
+  .clients-item &:hover,
+  .clients-item &:focus {
+    fill: $accent-color;
+  }
+}
