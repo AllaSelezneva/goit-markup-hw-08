@@ -1,18 +1,24 @@
-.us,
-.advantages,
-.team-work,
-.clients,
-.footer {
-  display: flex;
-  justify-content: center;
+.us {
+  // display: flex;
+  // justify-content: center;
+}
+
+.team-work {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
+.clients {
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+  }
 }
 .advantages {
-  flex-wrap: nowrap;
+  display: flex;
 }
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;

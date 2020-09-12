@@ -2,13 +2,55 @@ footer {
   color: $primery-background-color;
   background-color: #2f303a;
 }
-.footer-box {
-  width: 270px;
-  margin-right: 30px;
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
+}
+
+.footer-box-1,
+.footer-box-2 {
+  @media screen and (min-width: 480px) {
+    padding-bottom: 60px;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.footer-box-3 {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+  }
 }
 .footer-box-2 {
-  width: 570px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
 }
+
 .footer-appeal {
   display: block;
 
@@ -16,6 +58,40 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   text-transform: uppercase;
-
   margin-bottom: 20px;
+}
+
+.footer-form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.footer-input {
+  width: 358px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  color: $primery-background-color;
+  background-color: #2f303a;
+
+  padding: 15px 0 15px 16px;
+  // margin-top: 20px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0 12px 0 0;
+    width: 358px;
+  }
 }

@@ -1,7 +1,9 @@
 .main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 .nav {
   padding: 0;
@@ -24,7 +26,6 @@
 }
 
 .nav-link {
-  display: block;
   position: relative;
 
   font-weight: 500;
@@ -40,6 +41,12 @@
 
   transition: color 250ms $timing-function;
 
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
   &::after {
     content: "";
 
